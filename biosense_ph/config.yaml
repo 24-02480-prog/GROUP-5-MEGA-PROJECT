@@ -1,0 +1,68 @@
+scenario:
+  window_seconds: 30
+  random_seed: 40500
+  noise_snr_db: [20, 10, 5, 0]
+  spike_counts_per_window: [5, 20, 50]
+  spike_amplitude_std: 12.0
+  dropout_percentages: [10, 30, 60]
+  baseline_drift:
+    levels:
+      low: 0.25
+      high: 0.75
+    frequency_hz: 0.03
+  attenuation_fractions: [0.5, 0.2]
+
+rates:
+  ecg:
+    low_hz: 0.5
+    high_hz: 40.0
+    refractory_seconds: 0.45
+    prominence_floor: 0.10
+    prominence_std_fraction: 0.35
+    spectral_low_hz: 0.6
+    spectral_high_hz: 3.5
+    spectral_disagreement_bpm: 8.0
+    welch_segment_seconds: 8
+    harmonic_correction_max_divisor: 4
+    interval_median_kernel: 3
+    interval_outlier_fraction: 0.2
+  ppg:
+    low_hz: 0.5
+    high_hz: 8.0
+    refractory_seconds: 0.45
+    prominence_floor: 0.04
+    prominence_std_fraction: 0.12
+    spectral_low_hz: 0.6
+    spectral_high_hz: 3.5
+    spectral_disagreement_bpm: 8.0
+    welch_segment_seconds: 8
+    harmonic_correction_max_divisor: 4
+    interval_median_kernel: 3
+    interval_outlier_fraction: 0.2
+  respiration:
+    low_hz: 0.1
+    high_hz: 0.7
+    refractory_seconds: 1.5
+    prominence_floor: 0.05
+    prominence_std_fraction: 0.2
+    spectral_low_hz: 0.1
+    spectral_high_hz: 0.7
+    spectral_disagreement_bpm: 4.0
+    welch_segment_seconds: 8
+    harmonic_correction_max_divisor: 4
+    interval_median_kernel: 3
+    interval_outlier_fraction: 0.2
+
+cross_check:
+  hr_pr_max_difference_bpm: 10.0
+
+quality:
+  missing_nan_fraction: 0.2
+  partial_dropout_low_fraction: 0.01
+
+ml_quality:
+  cv_folds: 5
+  random_seed: 405
+
+ml_rate:
+  ridge_alpha: 1.0

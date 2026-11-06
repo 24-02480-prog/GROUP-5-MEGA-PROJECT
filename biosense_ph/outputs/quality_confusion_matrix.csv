@@ -1,0 +1,13 @@
+data_source,model,actual,predicted,count
+SYNTHETIC,RandomForest,OK,OK,64
+SYNTHETIC,RandomForest,OK,LOW,32
+SYNTHETIC,RandomForest,LOW,OK,28
+SYNTHETIC,RandomForest,LOW,LOW,1508
+SYNTHETIC,LogisticRegression,OK,OK,80
+SYNTHETIC,LogisticRegression,OK,LOW,16
+SYNTHETIC,LogisticRegression,LOW,OK,212
+SYNTHETIC,LogisticRegression,LOW,LOW,1324
+SYNTHETIC,RuleBased,OK,OK,96
+SYNTHETIC,RuleBased,OK,LOW,0
+SYNTHETIC,RuleBased,LOW,OK,983
+SYNTHETIC,RuleBased,LOW,LOW,553

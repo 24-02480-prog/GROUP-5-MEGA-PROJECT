@@ -1,0 +1,7 @@
+data_source,training_record,test_record,rate,peak_based_MAE,ml_corrected_MAE,peak_based_method,corrected_method,windows_evaluated
+SYNTHETIC,synthetic-01,synthetic-02,HR,0.03812510457873852,0.040269538783173964,peak-based (median-filtered IBI),ML-corrected (Ridge),16
+SYNTHETIC,synthetic-01,synthetic-02,PR,0.03812510457873852,0.04320600882744863,peak-based (median-filtered IBI),ML-corrected (Ridge),16
+SYNTHETIC,synthetic-01,synthetic-02,RR,0.01663380121137248,0.02449854067930124,peak-based (median-filtered IBI),ML-corrected (Ridge),16
+SYNTHETIC,synthetic-02,synthetic-01,HR,0.03452969510090842,0.0920702687425301,peak-based (median-filtered IBI),ML-corrected (Ridge),16
+SYNTHETIC,synthetic-02,synthetic-01,PR,0.03322114650444696,0.03630576704728394,peak-based (median-filtered IBI),ML-corrected (Ridge),16
+SYNTHETIC,synthetic-02,synthetic-01,RR,0.012535454371389143,0.041269835250006826,peak-based (median-filtered IBI),ML-corrected (Ridge),16
